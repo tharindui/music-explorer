@@ -15,8 +15,11 @@ export const searchMusic =
   ): any =>
   async (dispatch: any) => {
     dispatch(searchStart());
+    const requestURL = "https://itunes.apple.com/search";
+    //if you are using node server
+    //const requestURL = "http://localhost:3001/search";
     try {
-      const response = await axios.get(`https://itunes.apple.com/search`, {
+      const response = await axios.get(requestURL, {
         params: {
           term: query,
           limit: limit,
