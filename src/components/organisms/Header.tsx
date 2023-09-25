@@ -15,7 +15,7 @@ const Header = () => {
               component="div"
               sx={{ display: { xs: "none", sm: "block" } }}
             >
-              Apple Music
+              Music Explorer
             </Typography>
             <SearchForm></SearchForm>
             <Box sx={{ flexGrow: 1 }} />
