@@ -12,8 +12,8 @@ export const searchMusic =
   (
     query?: string,
     limit: number = 10 // Default limit is 10
-  ): ThunkAction<void, RootState, unknown, Action<string>> =>
-  async (dispatch) => {
+  ): any =>
+  async (dispatch: any) => {
     dispatch(searchStart());
     try {
       const response = await axios.get(`http://localhost:3001/search`, {
