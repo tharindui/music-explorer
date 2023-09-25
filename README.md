@@ -1,40 +1,88 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+# Music Explorer App
+
+Music Explorer App is a web application built using Next.js, Material-UI, and Redux. It allows users to search for artists, albums, and songs by fetching data from an external API.
+
+## Table of Contents
+- [Getting Started](#getting-started)
+- [Installation](#installation)
+- [Running the Application](#running-the-application)
+- [Testing](#testing)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
 
 ## Getting Started
 
-First, run the development server:
+Before running the application, make sure you have the following prerequisites installed:
+
+- [Node.js](https://nodejs.org/)
+- [Yarn](https://yarnpkg.com/)
+
+## Installation
+
+1. Clone this repository to your local machine:
+
+   ```bash
+   git clone https://github.com/tharindui/music-explorer.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd music-explorer
+   ```
+
+3. Install dependencies using Yarn:
+
+   ```bash
+   yarn install
+   ```
+
+## Running the Application
+
+1. Start the development server:
+
+   ```bash
+   yarn dev
+   ```
+
+2. Open your web browser and navigate to [http://localhost:3000](http://localhost:3000) to access the React application.
+
+   Note: Since the external API may not work with CORS enabled, you can either run the app in Chrome with web security disabled or use a proxy server to handle API calls.
+
+3. Start your Node.js server on port 3001 for API proxying:
+
+   ```bash
+   node server.js
+   ```
+
+   Now, your Node.js server is running on port 3001 and acts as a proxy for API requests.
+
+## Testing
+
+To run the unit tests, use the following command:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun run dev
+yarn test
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- Search for artists, albums, and songs.
+- Paginated results (10 items per page) that update as you scroll down.
+- Notification for no search results.
+- Responsive Material-UI design.
+- Unit tests using Jest and @testing-library/react.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Tech Stack
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- React
+- TypeScript
+- Next.js
+- Redux
+- axios
+- Redux Thunk
+- Node.js + Express (static serving of pages and API proxy)
+- Material-UI
+- Jest + @testing-library/react (for testing)
+```
