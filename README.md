@@ -1,4 +1,4 @@
-# music explorer App
+# Music explorer App
 
 This is a web application built using Next.js, Material-UI, and Redux that allows users to search for artists, albums, and songs. The application fetches data from an external API.
 
@@ -9,7 +9,7 @@ Before running the application, ensure you have the following prerequisites inst
 - Node.js (https://nodejs.org/)
 - Yarn (https://yarnpkg.com/)
 
-### Installation
+## Installation
 
 1. Clone this repository to your local machine:
 
@@ -21,7 +21,7 @@ Before running the application, ensure you have the following prerequisites inst
 3.Install dependencies using Yarn:
   - yarn install
     
-### Running the Application
+## Running the Application
 
 1. Start the development server:
    - yarn dev
@@ -33,19 +33,19 @@ Before running the application, ensure you have the following prerequisites inst
   - node server.js
 Now, your Node.js server is running on port 3001 and acts as a proxy for API requests.
 
-### Testing
+## Testing
 
 To run the unit tests, use the following command:
 - yarn test
 
-### Features
+## Features
 -Search for artists, albums, and songs.
 -Paginated results (10 items per page) that update as you scroll down.
 -Notification for no search results.
 -Responsive Material-UI design.
 -Unit tests using Jest and @testing-library/react.
 
-### Tech Stack
+## Tech Stack
 -React
 -TypeScript
 -Next.js
