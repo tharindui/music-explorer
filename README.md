@@ -3,6 +3,10 @@
 
 Music Explorer App is a web application built using Next.js, Material-UI, and Redux. It allows users to search for artists, albums, and songs by fetching data from an external API.
 
+## Demo
+
+You can try the live demo of this application here: [Demo](https://main--taupe-pika-43f84d.netlify.app/)
+
 ## Table of Contents
 - [Getting Started](#getting-started)
 - [Installation](#installation)
