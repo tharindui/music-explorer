@@ -86,3 +86,4 @@ yarn test
 - Material-UI
 - Jest + @testing-library/react (for testing)
 ```
+![image](https://github.com/tharindui/music-explorer/assets/47268302/deac99d5-2ea7-4643-9756-f1ecb1923396)
