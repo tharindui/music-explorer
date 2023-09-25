@@ -1,4 +1,4 @@
-# Artist, Album, and Song Search App
+# music explorer App
 
 This is a web application built using Next.js, Material-UI, and Redux that allows users to search for artists, albums, and songs. The application fetches data from an external API.
 
