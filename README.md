@@ -14,7 +14,7 @@ Before running the application, ensure you have the following prerequisites inst
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/artist-album-song-search-app.git
+   git clone https://github.com/tharindui/music-explorer.git
 2.Navigate to the project directory:
   - cd music-explorer
   
