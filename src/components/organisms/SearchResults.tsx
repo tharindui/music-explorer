@@ -22,6 +22,10 @@ const SearchResults = () => {
   // State to keep track of the current scroll position
   const [scrollPosition, setScrollPosition] = useState(0);
 
+  function hasMoreRecords(pages: number) {
+    console.log("pages", pages);
+    return pages % 10 === 0;
+  }
   const handleSearch = () => {
     const { terms } = router.query;
 
@@ -42,7 +46,7 @@ const SearchResults = () => {
       window.scrollTo(0, scrollPosition);
     }
 
-    if (results.length < 10) {
+    if (results.length < 10 || !hasMoreRecords(Number(results.length || 0))) {
       setHasMore(false);
     } else {
       setHasMore(true);
