@@ -26,7 +26,7 @@ const SearchResults = () => {
     const { terms } = router.query;
 
     const newPageCount = Number(results.length || 0) + 10;
-    dispatch(searchMusic(terms, newPageCount));
+    dispatch(searchMusic(terms?.toString() || "", newPageCount));
 
     // Save the current scroll position
     setScrollPosition(window.scrollY);
