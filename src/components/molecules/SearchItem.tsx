@@ -41,7 +41,7 @@ export default function SearchItem(item: itemProps) {
           </Typography>
 
           <Typography gutterBottom variant="body1" component="div">
-            Artist : {item.title}
+            Artist : {item.artistName}
           </Typography>
           <Typography gutterBottom variant="body1" component="div">
             Collection Name : {item.collectionName}
